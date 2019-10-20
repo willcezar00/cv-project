@@ -1,0 +1,38 @@
+.container{
+    height: 100%;
+    position: relative;
+}
+
+.card {
+    border-radius:20px;
+    height:300px;
+    width:300px;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+    -webkit-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    
+}
+
+.name{
+    font:400 15px/1.8 "Lato", sans-serif; 
+    letter-spacing: 5px;
+    font-size: 14pt;
+}
+
+.name span{
+    top:85% !important;
+    left:50%;
+    transform: translateX(-50%);
+    position: relative;
+    display:inline-block;
+}
+
+.logo{
+    padding:15%;
+    height:70%;
+    width:70%;
+    position: relative;
+}

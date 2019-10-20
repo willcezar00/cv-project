@@ -1,0 +1,152 @@
+html, body, .App {
+  height: 100%;
+  width:100%;
+  font:400 15px/1.8 "Lato", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+  position:absolute;
+}
+
+.container{
+  height: 100vh;
+  background-color: #fff ;
+}
+
+.homeImage {
+  height: 100%;
+  width:100%;
+  background-image: url("images/code-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  position:fixed;
+  z-index: 100;
+  overflow: hidden;
+  color: #fff;
+  font-size: 25px;
+  background-color: #fff;
+  height:70px;
+  width:100%;
+  background-color: Transparent;
+}
+
+.navbar a {
+  float: right;
+  margin-right:25px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 30px;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #575757;
+  cursor: pointer;
+}
+
+.navbar-scrolled{
+  position:fixed;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #fff;
+  height:70px;
+  width:100%;
+  -webkit-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-scrolled a.active {
+  height:70px;
+  background-color: #F08D81;
+  color: #fff;  
+}
+
+.centered {
+  text-align:center;
+  display:inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered span {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  -webkit-box-shadow: -4px 3px 17px 0px #fff;
+  -moz-box-shadow: -4px 3px 17px 0px #fff;
+  box-shadow: -4px 3px 17px 0px #fff;
+
+}
+
+
+.centered b {
+    color:#B15E6C;
+    font-weight: bold;
+
+}
+
+.bottom{
+  top: 90%;
+  left: 50%;
+  text-align:center;
+  display:inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.bottom button{
+  padding: 10px 20px;
+  color:#fff;
+  border: 2px solid #fff;
+  box-sizing: inherit;
+  display: inline-block;
+  font-size: 14pt;
+  transition: all .5s;
+  cursor: pointer;
+  background-color: Transparent;
+  top:80%;
+}
+
+.bottom  button:hover{
+  background-color: #fff;
+  color:#000;
+  
+}
+
+section {
+  position:relative;
+  height:100vh;
+  width:100%;
+  background-color:#fff;
+}
+
+.card-wrapper{
+  position: relative;
+  top:30%;
+  left:7%;
+  transform: translateY(-50%);
+}
+
