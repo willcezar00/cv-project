@@ -15,7 +15,7 @@ function App() {
         <div className="navigators">
           <a >Contact</a>
           <a >About</a>
-          <a >Experience</a>
+          <a href="#experience">Experience</a>
           <a className="active"> Home</a>
         </div>
       </div>
@@ -26,17 +26,17 @@ function App() {
             <span> Hello, I'm <b> William Cezar </b> </span>
             <br />
             <br />
-            <span> I'm a full-stack Developer</span>
+            <span> I'm a full-stack developer.</span>
           </div>
 
           <div className="bottom">
-            <button>Know more about me  <FontAwesomeIcon icon="arrowDown" /> </button>
+            <a href="#experience" class="btn-about-me">View my work <FontAwesomeIcon icon="arrowDown" /> </a>
           </div>
 
         </div>
       </section>
 
-      <section id="about">
+      <section id="experience">
         <div className="card-wrapper">
           <div className="card-header">
             <span>Those are the enterprises that I <b>proudly </b>  contributed with</span>
