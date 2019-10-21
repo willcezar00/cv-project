@@ -92,10 +92,8 @@ html, body, .App {
 }
 
 
-.centered b {
+span b {
     color:#B15E6C;
-    font-weight: bold;
-
 }
 
 .bottom{
@@ -146,7 +144,15 @@ section {
 .card-wrapper{
   position: relative;
   top:30%;
-  left:7%;
+  left:3%;
   transform: translateY(-50%);
+}
+
+.card-header{
+  font-size: 30pt;
+  position: relative;
+  text-align:center;
+  letter-spacing: 5px;
+  top:15%;
 }
 

@@ -1,22 +1,20 @@
 .container{
-    height: 100%;
-    position: relative;
-}
-
-.card {
-    border-radius:20px;
-    height:300px;
-    width:300px;
-    float: left;
-    margin-left: 10%;
-    position: relative;
-    -webkit-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
-    box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    width: 350px;
+    height: 350px;
+    float:left;
+    perspective: 1000px;
+    background-color: transparent;
+    margin-left:10%;
     
 }
 
+.card {
+    height:100%;
+    width:100%;
+}
+
 .name{
+    cursor:pointer;
     font:400 15px/1.8 "Lato", sans-serif; 
     letter-spacing: 5px;
     font-size: 14pt;
@@ -31,8 +29,43 @@
 }
 
 .logo{
+    cursor:pointer;
     padding:15%;
     height:70%;
     width:70%;
     position: relative;
+}
+
+
+.flip-card-inner {
+    border-radius:20px;
+    height:350px;
+    width:350px;
+    float: left;
+    background-color: #fff;
+    -webkit-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 3px 17px 0px rgba(0,0,0,0.75);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    
+    
+}
+
+.container:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.card, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    text-align: center;
+    border-radius:20px;
+    background-color:#fff;
+    transform: rotateY(180deg);
 }

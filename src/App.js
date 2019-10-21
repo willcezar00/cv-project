@@ -5,6 +5,8 @@ import Card from './Card/Card.js';
 import AccentureLogo from './images/Accenture-logo.png';
 import eWolrdLogo from './images/eWorld-logo.png';
 import squadraLogo from './images/squadra-logo.png';
+
+
 function App() {
   return (
 
@@ -35,6 +37,9 @@ function App() {
       </section>
 
       <section id="about">
+        <div className="card-header">
+        <span>Those are the enterprises that I <b>proudly </b>  contributed with</span>
+        </div>
         <div className="card-wrapper">
           <Card name="Grupo EWorld" logo={eWolrdLogo}></Card>
           <Card name="Squadra Tecnologia"  logo={squadraLogo} ></Card>
