@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 html, body, .App {
   height: 100%;
   width:100%;
@@ -13,7 +17,7 @@ html, body, .App {
   background-color: #fff ;
 }
 
-.homeImage {
+.home-image {
   height: 100%;
   width:100%;
   background-image: url("images/code-image.jpg");
@@ -67,7 +71,7 @@ html, body, .App {
 .navbar-scrolled a.active {
   height:70px;
   background-color: #F08D81;
-  color: #fff;  
+  color: #fff;
 }
 
 .centered {
@@ -131,7 +135,7 @@ span b {
 .bottom  button:hover{
   background-color: #fff;
   color:#000;
-  
+
 }
 
 section {
@@ -142,17 +146,19 @@ section {
 }
 
 .card-wrapper{
-  position: relative;
-  top:30%;
-  left:3%;
-  transform: translateY(-50%);
+
+  vertical-align: middle;
+  text-align:center;
 }
 
 .card-header{
+  margin-top:5%;
   font-size: 30pt;
-  position: relative;
-  text-align:center;
+  display: inline-block;
   letter-spacing: 5px;
-  top:15%;
+}
+
+.cards{
+  margin-top:5%;
 }
 

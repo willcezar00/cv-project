@@ -10,7 +10,7 @@ const Card = ({
     return (
         <div className="container">
             <div className="flip-card-inner">
-                
+
                 <div className="card" onClick={onItemClick}>
                     <div>
                         <img className="logo" src={logo} alt={name} />
@@ -20,7 +20,7 @@ const Card = ({
                     </div>
                 </div>
 
-                <div class="card-back">
+                <div className="card-back">
                     <h1>John Doe</h1>
                     <p>Architect & Engineer</p>
                     <p>We love that guy</p>

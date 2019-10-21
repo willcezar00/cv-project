@@ -21,7 +21,7 @@ function App() {
       </div>
 
       <section id="home">
-        <div className="homeImage">
+        <div className="home-image">
           <div className="centered">
             <span> Hello, I'm <b> William Cezar </b> </span>
             <br />
@@ -37,13 +37,15 @@ function App() {
       </section>
 
       <section id="about">
-        <div className="card-header">
-        <span>Those are the enterprises that I <b>proudly </b>  contributed with</span>
-        </div>
         <div className="card-wrapper">
-          <Card name="Grupo EWorld" logo={eWolrdLogo}></Card>
-          <Card name="Squadra Tecnologia"  logo={squadraLogo} ></Card>
-          <Card name="Accenture" logo={AccentureLogo}></Card>
+          <div className="card-header">
+            <span>Those are the enterprises that I <b>proudly </b>  contributed with</span>
+          </div>
+          <div class="cards">
+            <Card name="Grupo EWorld" logo={eWolrdLogo}></Card>
+            <Card name="Squadra Tecnologia" logo={squadraLogo} ></Card>
+            <Card name="Accenture" logo={AccentureLogo}></Card>
+          </div>
         </div>
       </section>
 
