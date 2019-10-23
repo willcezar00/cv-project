@@ -1,168 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap');
+
 * {
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
-html,
-body,
-.App {
-  height: 100%;
-  width: 100%;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  overflow-y: auto;
-  overflow-x: hidden;
-  display: block;
-  position: absolute;
+html, body, .App {
+    height: 100%;
+    width: 100%;
+    font: 400 15px/1.8 'Raleway', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    position: absolute;
+}
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.text-tittle {
+    padding-top:5%;
+    text-align: center;
+    font-size: 30pt;
+    letter-spacing: 5px;
+    display:block;
+}
+
+.main-header {
+    position:fixed;
+    width: 100%;
+    padding: 0;
+    margin:0;
+
+}
+
+.main-nav {  
+    height:70px;
+    text-align:right;
+}
+
+.main-nav__items {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0px 25px;
+    font-size: 20px;
+}
+
+.main-nav__item a {
+    display:inline-block;
+    text-decoration: none;
+    color:#fff;
+}
+
+.main-nav__item a:active,
+.main-nav__item a:hover {
+    text-decoration: none;
+    color:#c2c2c2;
 }
 
 .container {
-  height: 100vh;
-  background-color: #fff;
+    height: 100vh;
+    background-color: #fff;
 }
 
 .home-image {
-  height: 100%;
-  width: 100%;
-  background-image: url("images/code-image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.navbar {
-  position: fixed;
-  z-index: 100;
-  overflow: hidden;
-  color: #fff;
-  font-size: 25px;
-  background-color: #fff;
-  height: 70px;
-  width: 100%;
-  background-color: Transparent;
-}
-
-.navbar a {
-  float: right;
-  margin-right: 25px;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 20px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  height: 30px;
-}
-
-.navbar a:hover {
-  background-color: #fff;
-  color: #575757;
-  cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/code-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar-scrolled {
-  position: fixed;
-  z-index: 100;
-  overflow: hidden;
-  background-color: #fff;
-  height: 70px;
-  width: 100%;
-  -webkit-box-shadow: -4px 3px 17px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -4px 3px 17px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -4px 3px 17px 0px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
+    -webkit-box-shadow: -4px 3px 17px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 3px 17px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 3px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-scrolled a.active {
-  height: 70px;
-  background-color: #F08D81;
-  color: #fff;
+    height: 70px;
+    background-color: #F08D81;
+    color: #fff;
 }
 
-.centered {
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.main-text-centered {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.centered span {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 30px;
-  letter-spacing: 10px;
-  -webkit-box-shadow: -4px 3px 17px 0px #fff;
-  -moz-box-shadow: -4px 3px 17px 0px #fff;
-  box-shadow: -4px 3px 17px 0px #fff;
+.main-text-centered span {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    -webkit-box-shadow: -4px 3px 17px 0px #fff;
+    -moz-box-shadow: -4px 3px 17px 0px #fff;
+    box-shadow: -4px 3px 17px 0px #fff;
 }
 
 span b {
-  color: #B15E6C;
+    color: #B15E6C;
 }
 
 .bottom {
-  top: 80%;
-  left: 50%;
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  transform: translate(-50%, -50%);
+    top: 80%;
+    left: 50%;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 .btn-about-me {
-  padding: 13px 20px;
-  color: #fff;
-  border: 2px solid #fff;
-  display: inline-block;
-  font-size: 20px;
-  transition: all .5s;
-  cursor: pointer;
-  background-color: Transparent;
-  text-decoration: none;
-  border-radius: 4px;
-  font-family: inherit;
+    padding: 13px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: 20px;
+    transition: all .5s;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: inherit;
 }
 
 .btn-about-me:focus {
-  outline: none;
+    outline: none;
 }
 
 .btn-about-me:hover {
-  background-color: #B15E6C;
-  border:2px solid #B15E6C;
+    background-color: #B15E6C;
+    border: 2px solid #B15E6C;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+
+#about{
+    background: #fff;
 }
 
-.sticky+.content {
-  padding-top: 60px;
+#experience{
+    background: #f5f5f5;
 }
-
-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-color: #fff;
-}
-
 .card-wrapper {
-
-  vertical-align: middle;
-  text-align: center;
-}
-
-.card-header {
-  margin-top: 5%;
-  font-size: 30pt;
-  display: inline-block;
-  letter-spacing: 5px;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .cards {
-  margin-top: 5%;
+    margin-top: 5%;
 }
