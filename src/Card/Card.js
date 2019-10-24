@@ -5,14 +5,16 @@ import "./Card.css";
 const Card = ({
     logo = "",
     name = "",
+    backCardText = "",
+    backCardTitle = "",
     onItemClick = () => { }
 }) => {
     return (
         <div className="container">
             <div className="flip-card-inner">
 
-                <div className="card" onClick={onItemClick}>
-                    <div>
+                <div className="card-front" onClick={onItemClick}>
+                    <div className="card-front__logo">
                         <img className="logo" src={logo} alt={name} />
                     </div>
                     <div className="name">
@@ -21,9 +23,8 @@ const Card = ({
                 </div>
 
                 <div className="card-back">
-                    <h1>John Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
+                    <h1>{backCardTitle}</h1>
+                    <p>{backCardTitle}</p>
                 </div>
             </div>
         </div>

@@ -7,12 +7,12 @@ import squadraLogo from './images/squadra-logo.png';
 
 
 function App() {
+  let eWorldTitle = "Jun 2016 - Feb 2018";
+  let eWorldContent = "EWorld was a small startup that a joined in";
   return (
     <div className="App">
-
       <header className="main-header">
         <nav className="main-nav">
-
           <ul className="main-nav__items">
             <li className="main-nav__item">
               <a href="#home" >Home</a>
@@ -30,7 +30,6 @@ function App() {
               <a href="#experience">Contact</a>
             </li>
           </ul>
-
         </nav>
       </header>
 
@@ -53,21 +52,19 @@ function App() {
 
       <section id="about">
         <div className="text-tittle">
-            <span>My <b>Journey </b>  so far...</span>
+          <span>My <b>Journey </b>  so far...</span>
         </div>
 
       </section>
 
       <section id="experience">
-        <div className="card-wrapper">
-          <div className="text-tittle">
-            <span>Those are the enterprises that I <b>proudly </b>  contributed with</span>
-          </div>
-          <div className="cards">
-            <Card name="Grupo EWorld" logo={eWolrdLogo}></Card>
-            <Card name="Squadra Tecnologia" logo={squadraLogo} ></Card>
-            <Card name="Accenture" logo={AccentureLogo}></Card>
-          </div>
+        <div className="text-tittle">
+          <span>Those are the enterprises that I <b>proudly </b>  contributed with</span>
+        </div>
+        <div className="cards-wrapper">
+          <Card name="Grupo EWorld" logo={eWolrdLogo}></Card>
+          <Card name="Squadra Tecnologia" logo={squadraLogo} ></Card>
+          <Card name="Accenture" logo={AccentureLogo}></Card>
         </div>
       </section>
 
