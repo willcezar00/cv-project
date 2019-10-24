@@ -12,7 +12,6 @@ const Card = ({
     return (
         <div className="container">
             <div className="flip-card-inner">
-
                 <div className="card-front" onClick={onItemClick}>
                     <div className="card-front__logo">
                         <img className="logo" src={logo} alt={name} />
